@@ -8,7 +8,7 @@ include "config/db.php";
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Авторизация</title>
+	<title>Authorization</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -18,23 +18,23 @@ include "config/db.php";
 	<div id="content">
 		<form method="POST" id="form">
 		<p>
-			Введите вашу почту:<br/>
+			Enter your email:<br/>
 			<input type="text" name="mail">
 		</p>
 		<p>
-			Введите ваш пароль:<br/>
+			Enter your password:<br/>
 			<input type="password" name="pass-word">
 		</p>
 		<p>
-			<button type="submit">Войти</button>
+			<button type="submit">Log in</button>
 		</p>
 		<p>
-			<h2><a href="registr.php">Зарегестрироваться</a></h2>
+			<h2><a href="registr.php">Register</a></h2>
 		</p>
 	</form>
 	<?php
 	if(isset($_POST["mail"]) && isset($_POST["pass-word"]) && $_POST["mail"]!="" && $_POST["pass-word"]!=""){
-			// Запрос для сравнения введеных данных, с данными из базы данных
+			// Query to compare the entered data with the data from the database
 			
 			$sql = "SELECT * FROM user WHERE email LIKE '" . $_POST["mail"] . "' AND password LIKE '" . $_POST["pass-word"] . "'";
 			$result = mysqli_query($connect, $sql);
