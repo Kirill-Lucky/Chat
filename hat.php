@@ -1,6 +1,6 @@
 <div id="hat">
 	<div id="logo">
-		<h2><img src="/img/logo.png"></h2> <span><b>Веб-чат</b></span>
+		<h2><img src="/img/logo.png"></h2> <span><b>Web chat</b></span>
 	</div>
 	<div id="menu">
 		<?php 
@@ -13,19 +13,19 @@
 		}
 
 		?>
-		<a href="index.php">Главная</a>
-		<a href="#" id="open-contact">Контакты</a>
-		<a href="#">Настройки</a>
+		<a href="index.php">Main page</a>
+		<a href="#" id="open-contact">Contacts</a>
+		<a href="#">Setting</a>
 
 		<?php 
 		if(isset($_COOKIE["id"])){
 			?>
-			<a href="logout.php">Выйти</a>
+			<a href="logout.php">Log out</a>
 			<?php	
 		}
 		else{
 		?>
-			<a href="login.php">Войти</a>
+			<a href="login.php">Log in</a>
 		<?php
 		}
 		?>
