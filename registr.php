@@ -11,7 +11,7 @@ if(isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && 
 		header("Location: login.php");
 	}
 	else{
-		echo "<h2>Произошла ошибка</h2>";
+		echo "<h2>An error has occurred</h2>";
 	}
 }
 
