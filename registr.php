@@ -21,7 +21,7 @@ if(isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Регистрация</title>
+	<title>Registration</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -32,26 +32,26 @@ if(isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && 
 	<div id="content">
 		<form method="POST" id="form">
 		<p>
-			Введите ваше имя:<br/>
+			Print your name:<br/>
 			<input type="text" name="name">
 		</p>
 		<p>
-			Введите ваш номер телефона:<br/>
+			Print your phone number:<br/>
 			<input type="text" name="phone">
 		</p>
 		<p>
-			Введите вашу почту:<br/>
+			Print your e-mail address:<br/>
 			<input type="text" name="email">
 		</p>
 		<p>
-			Введите ваш пароль:<br/>
+			Print new password:<br/>
 			<input type="password" name="password">
 		</p>
 		<p>
-			<button type="submit">Зарегистрироваться</button>
+			<button type="submit">Register</button>
 		</p>
 	</form>
-	<!-- Функция для авторизации, сравнение введенных даных с данными из базы данных -->
+	
 
 	</div>
 	
