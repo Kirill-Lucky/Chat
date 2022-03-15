@@ -7,7 +7,7 @@ if(isset($_GET["user_id"])){
 	if(mysqli_query($connect, $sql)){
 		header("Location: /index.php ");
 	} else {
-		echo "<h2>Этот пользователь уже удален</h2>";
+		echo "<h2>This user has already been deleted</h2>";
 	}
 }
 
