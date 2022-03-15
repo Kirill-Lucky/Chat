@@ -10,7 +10,7 @@ if($id == null){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Веб-чат</title>
+	<title>Web chat</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
